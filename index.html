@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Game</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="gradient-text center-text">GUESS THE NUMBER GAME</h1>
+  <p class="instructions">Guess the number the system randomely picked!</p>
+  <div class="game-box">
+    <div class="trace-input-wrap stage-inner">
+              <input class="trace-input" type="text" placeholder="Guess the number" id="input"/>
+              <svg class="trace-svg" viewBox="0 0 300 44" preserveAspectRatio="none">
+                                <rect x="1" y="1" width="298" height="42" rx="8"/>
+              </svg>
+      </div>
+      <br>
+      <br>
+      <button id="button" class="magnetic-btn">Submit Guess</button>
+  </div>
+
+  <div id="customAlert" class="alert-card state-hidden-top">
+      <div class="alert-content">
+          <span id="alertMessage"></span>
+          <button id="closeBtn">&times;</button>
+      </div>
+      <div class="timer-slider-container">
+          <div id="timerSlider" class="timer-slider"></div>
+      </div>
+  </div>
+
+  <div class="custom-cursor">
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
